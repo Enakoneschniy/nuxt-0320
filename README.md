@@ -20,3 +20,16 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Описание проекта
+1) Авторизаци / регистрация
+
+2) Меню сайта
+
+3) Поиск
+
+4) Страница списка статтей
+
+5) Страница одной статьи
+
+6) Страница добавления / редактирования статьи

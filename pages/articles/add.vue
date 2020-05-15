@@ -1,12 +1,12 @@
 <template>
   <div>
-    Todo
+    <h1>Add article</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TodoList'
+  name: 'add'
 }
 </script>
 

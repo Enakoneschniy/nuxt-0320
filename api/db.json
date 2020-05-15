@@ -1,0 +1,44 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Texx done 1!",
+      "previewImage": "https://www.fillmurray.com/1110/300/",
+      "detailImage": "https://www.fillmurray.com/1110/300/",
+      "detailImages": [
+        "https://www.fillmurray.com/1110/300/",
+        "https://www.fillmurray.com/1110/302/",
+        "https://www.fillmurray.com/1110/303/",
+        "https://www.fillmurray.com/1110/304/"
+      ],
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "detailText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. "
+    },
+    {
+      "id": 2,
+      "title": "Well test 2!",
+      "previewImage": "https://www.fillmurray.com/1068/300/",
+      "detailImage": "https://www.fillmurray.com/1068/300/",
+      "detailImages": [
+        "https://www.fillmurray.com/1068/300/",
+        "https://www.fillmurray.com/1068/300/",
+        "https://www.fillmurray.com/1068/300/"
+      ],
+      "previewText": "Aww yeah, you HELLO read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "detailText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content."
+    },
+    {
+      "id": 3,
+      "title": "Some article 3!",
+      "previewImage": "https://www.fillmurray.com/1068/300/",
+      "detailImage": "https://www.fillmurray.com/1068/300/",
+      "detailImages": [
+        "https://www.fillmurray.com/1068/300/",
+        "https://www.fillmurray.com/1068/300/",
+        "https://www.fillmurray.com/1068/300/"
+      ],
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "detailText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content."
+    }
+  ]
+}

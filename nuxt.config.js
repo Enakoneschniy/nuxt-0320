@@ -1,6 +1,9 @@
 
 export default {
   mode: 'universal',
+  router: {
+    prefetchLinks: false
+  },
   /*
   ** Headers of the page
   */
@@ -36,7 +39,8 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/router'
   ],
   /*
   ** Nuxt.js modules
@@ -52,6 +56,8 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    host: 'localhost',
+    port: 8080
   },
   /*
   ** Build configuration
