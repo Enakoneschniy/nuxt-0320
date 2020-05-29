@@ -1,21 +1,22 @@
 <template>
   <div class="articles-list">
-    <h1>Articles</h1>
-    <articles-list-item v-for="article of articles" :key="article.id" :article="article" />
+    <h1 class="text-center mb-5 mt-5">
+      Articles
+    </h1>
+    <articles-list-item v-for="article of articles" :key="article.id" :article="article"/>
   </div>
 </template>
 
 <script>
-import ArticlesListItem from './ArticlesListItem'
+  import { mapGetters } from 'vuex'
+  import ArticlesListItem from './ArticlesListItem'
+
 export default {
   name: 'ArticlesList',
   components: { ArticlesListItem },
-  props: {
-    articles: {
-      type: Array,
-      required: true
-    }
-  }
+  computed: mapGetters({
+    articles: 'articles/items'
+  })
 }
 </script>
 

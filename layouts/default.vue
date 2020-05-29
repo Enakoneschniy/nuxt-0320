@@ -1,5 +1,6 @@
 <template>
   <div>
+    <modals-container/>
     <TheHeader />
     <div class="container mt-100">
       <nav aria-label="breadcrumb">

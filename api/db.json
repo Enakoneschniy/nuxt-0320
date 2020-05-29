@@ -1,4 +1,20 @@
 {
+  "favorites": [
+    {
+      "id": 3,
+      "title": "Some article 3!",
+      "previewImage": "https://www.fillmurray.com/1068/300/",
+      "detailImage": "https://www.fillmurray.com/1068/300/",
+      "detailImages": [
+        "https://www.fillmurray.com/1068/300/",
+        "https://www.fillmurray.com/1068/300/",
+        "https://www.fillmurray.com/1068/300/"
+      ],
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "detailText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "createdAt": "29/05/2020"
+    }
+  ],
   "articles": [
     {
       "id": 1,
@@ -39,6 +55,48 @@
       ],
       "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
       "detailText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content."
+    },
+    {
+      "title": "Это наша первая статья",
+      "previewText": "Tsome <span class=\"text-success\">true</span> and <span class=\"text-danger\">false</span> sfsdfjkahjkf aahjdkashdkjhas ajhgdjhasgfjhahis",
+      "detailText": "<span class=\"text-success\">true</span> and <span class=\"text-danger\">false</span> works. This is detail text",
+      "previewImage": "https://www.fillmurray.com/1110/300/",
+      "detailImage": "https://www.fillmurray.com/1110/300/",
+      "detailImages": [
+        "https://www.fillmurray.com/1110/300/",
+        "https://www.fillmurray.com/1110/302/",
+        "https://www.fillmurray.com/1110/303/",
+        "https://www.fillmurray.com/1110/304/"
+      ],
+      "id": 4
+    },
+    {
+      "title": "zxczxczx",
+      "previewText": "zxvbcvbxc",
+      "detailText": "xzczxczxc",
+      "previewImage": "https://www.fillmurray.com/1110/300/",
+      "detailImage": "https://www.fillmurray.com/1110/300/",
+      "detailImages": [
+        "https://www.fillmurray.com/1110/300/",
+        "https://www.fillmurray.com/1110/302/",
+        "https://www.fillmurray.com/1110/303/",
+        "https://www.fillmurray.com/1110/304/"
+      ],
+      "id": 5
+    },
+    {
+      "title": "",
+      "previewText": "",
+      "detailText": "",
+      "previewImage": "https://www.fillmurray.com/1110/300/",
+      "detailImage": "https://www.fillmurray.com/1110/300/",
+      "detailImages": [
+        "https://www.fillmurray.com/1110/300/",
+        "https://www.fillmurray.com/1110/302/",
+        "https://www.fillmurray.com/1110/303/",
+        "https://www.fillmurray.com/1110/304/"
+      ],
+      "id": 6
     }
   ]
 }
