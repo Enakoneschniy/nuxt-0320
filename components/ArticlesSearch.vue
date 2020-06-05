@@ -5,20 +5,20 @@
 </template>
 
 <script>
-  export default {
-    name: 'ArticlesSearch',
-    data: () => ({
-      q: ''
-    }),
-    methods: {
-      onSearch () {
-        this.$nuxt.$router.push({
-          name: 'articles',
-          query: { q: this.q }
-        })
-      }
+export default {
+  name: 'ArticlesSearch',
+  data: () => ({
+    q: ''
+  }),
+  methods: {
+    onSearch () {
+      this.$nuxt.$router.push({
+        name: 'articles',
+        query: { q: this.q }
+      })
     }
   }
+}
 </script>
 
 <style scoped lang="sass">

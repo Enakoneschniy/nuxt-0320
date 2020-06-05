@@ -5,9 +5,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'LoginModal'
-  }
+export default {
+  name: 'LoginModal'
+}
 </script>
 
 <style scoped lang="scss">

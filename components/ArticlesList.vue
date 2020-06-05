@@ -11,13 +11,13 @@
   import { mapGetters } from 'vuex'
   import ArticlesListItem from './ArticlesListItem'
 
-export default {
-  name: 'ArticlesList',
-  components: { ArticlesListItem },
-  computed: mapGetters({
-    articles: 'articles/items'
-  })
-}
+  export default {
+    name: 'ArticlesList',
+    components: { ArticlesListItem },
+    computed: mapGetters({
+      articles: 'articles/items'
+    })
+  }
 </script>
 
 <style scoped lang="scss">

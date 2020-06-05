@@ -2,7 +2,8 @@
 export default {
   mode: 'universal',
   router: {
-    prefetchLinks: false
+    prefetchLinks: false,
+    middleware: ['i18n']
   },
   /*
   ** Headers of the page
@@ -47,10 +48,12 @@ export default {
    */
   plugins: [
     './plugins/truncateFilter.js',
+    './plugins/validate.js',
     {
       src: './plugins/vue-js-modal.js',
       ssr: true
-    }
+    },
+    './plugins/i18n.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -66,6 +69,9 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    ['nuxt-fontawesome', {
+      component: 'fa'
+    }],
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
@@ -83,9 +89,12 @@ export default {
   ** Build configuration
   */
   build: {
+    transpile: [
+      'vee-validate/dist/rules'
+    ],
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend (config, ctx) {
     }
   }

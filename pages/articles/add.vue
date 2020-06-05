@@ -3,35 +3,42 @@
     <h1 class="mb-4">
       Add new article
     </h1>
-    <form @submit.prevent="onCreateArticle">
-      <div class="form-group">
-        <label for="title">Title</label>
-        <input id="title" v-model="article.title" type="text" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="preview-text">Preview text</label>
-        <div
-          id="preview-text"
-          ref="previewText"
-          contenteditable="true"
-          class="form-control"
-          @input="onInput($event.target.innerText)"
-        />
-      </div>
-      <div class="form-group">
-        <label for="detail-text">Detail text</label>
-        <div
-          id="detail-text"
-          ref="detailText"
-          contenteditable="true"
-          class="form-control"
-          @input="onInputDetail($event.target.innerText)"
-        />
-      </div>
-      <button type="submit" class="btn btn-primary btn-block">
-        Create
-      </button>
-    </form>
+    <validation-observer v-slot="{ handleSubmit }" slim>
+      <form @submit.prevent="handleSubmit(onCreateArticle)">
+        <validation-provider v-slot="{ errors, classes }" rules="required|min:5" class="form-group" name="Title"
+                             tag="div">
+          <label for="title">Title</label>
+          <input id="title" v-model="article.title" type="text" :class="classes" class="form-control">
+          <span v-for="error of errors" :key="error" class="text-danger">{{ error }}</span>
+        </validation-provider>
+        <validation-provider v-slot="{ errors, classes }" rules="required" class="form-group" name="Preview Text"
+                             tag="div">
+          <label for="preview-text">Preview text</label>
+          <div
+            id="preview-text"
+            ref="previewText"
+            contenteditable="true"
+            :class="classes"
+            class="form-control"
+            @input="onInput($event.target.innerText)"
+          />
+          <span v-for="error of errors" :key="error" class="text-danger">{{ error }}</span>
+        </validation-provider>
+        <div class="form-group">
+          <label for="detail-text">Detail text</label>
+          <div
+            id="detail-text"
+            ref="detailText"
+            contenteditable="true"
+            class="form-control"
+            @input="onInputDetail($event.target.innerText)"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Create
+        </button>
+      </form>
+    </validation-observer>
   </div>
 </template>
 
@@ -54,9 +61,13 @@ export default {
     }
   }),
   methods: {
-    onCreateArticle () {
-      this.$axios.$post('/articles', this.article)
-      this.$router.push({ name: 'articles' })
+    async onCreateArticle () {
+      try {
+        await this.$axios.$post('/articles', this.article)
+        await this.$router.push({ name: 'articles' })
+      } catch (e) {
+        console.log(e)
+      }
     },
     onInput (text) {
       let newText = text.replace(/true/g, '<span class="text-success">true</span>')
@@ -97,12 +108,16 @@ export default {
 </script>
 
 <style scoped lang="sass">
-  .add-article-page
-    padding-bottom: 60px
+  .has-error
+    border-color: red
+    color: red
 
-    textarea
-      resize: none
+    .add-article-page
+      padding-bottom: 60px
 
-    div[contenteditable]
-      height: 200px
+      textarea
+        resize: none
+
+      div[contenteditable]
+        height: 200px
 </style>
