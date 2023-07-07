@@ -35,6 +35,6 @@
     "husky": "^4.2.5",
     "node-sass": "^4.14.0",
     "sass-loader": "^8.0.2",
-    "stylelint": "^10.1.0"
+    "stylelint": "^15.10.1"
   }
 }
